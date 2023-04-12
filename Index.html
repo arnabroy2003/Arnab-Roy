@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixed Header and Footer</title>
+    <style>
+       body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <h2>Content</h2>
+      <p>This is an example of a layout with a fixed header and footer.</p>
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
